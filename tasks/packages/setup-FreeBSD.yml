@@ -1,0 +1,25 @@
+---
+# Tasks file for install bind daemon on FreeBSD system
+
+- name: Install bind daemon on FreeBSD
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ bind_packages }}"
+
+- name: Set named enable in rc.d on FreeBSD
+  lineinfile:
+    path: /etc/rc.d/named
+    regexp: '^named_enable='
+    line: 'named_enable=YES'
+    create: yes
+    owner: root
+    group: wheel
+    state: present
+
+- name: Service bind on FreeBSD
+  service:
+    name: "{{ bind_service }}"
+    enabled: yes
+    state: started

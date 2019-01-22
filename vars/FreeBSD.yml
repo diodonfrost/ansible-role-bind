@@ -1,0 +1,4 @@
+bind_packages:
+  - bind912
+
+bind_service: named
