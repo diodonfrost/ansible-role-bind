@@ -1,6 +1,7 @@
 # Bind install
 
 bind_package = 'bind'
+bind_package = 'bind9' if os.family == "debian"
 
 control 'install-01' do
   impact 1.0
