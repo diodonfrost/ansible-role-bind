@@ -2,4 +2,4 @@ bind_packages:
   - bind
   - dnsutils
 
-bind_service: bind
+bind_service: named

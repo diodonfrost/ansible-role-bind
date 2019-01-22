@@ -18,3 +18,9 @@
     state: present
   with_items:
     - "{{ bind_packages }}"
+
+- name: Manage Bind service
+  service:
+    name: "{{ bind_service }}"
+    enabled: yes
+    state: started

@@ -2,4 +2,4 @@ bind_packages:
   - bind
   - bind-utils
 
-bind_service: bind
+bind_service: named
