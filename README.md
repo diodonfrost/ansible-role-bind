@@ -1,6 +1,5 @@
 # ansible-role-bind
 
-[![Build Status](https://travis-ci.org/diodonfrost/ansible-role-bind.svg?branch=master)](https://travis-ci.org/diodonfrost/ansible-role-bind)
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-diodonfrost.bind-660198.svg)](https://galaxy.ansible.com/diodonfrost/bind)
 
 A brief description of the role goes here.
